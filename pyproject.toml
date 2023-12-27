@@ -6,10 +6,10 @@ build-backend = "hatchling.build"
 sources = ["src"] # Where to build packages
 
 [tool.hatch.version]
-path = "src/package/__init__.py" # dynamically set version as __version__ in this python file
+path = "src/packageworkshop/__init__.py" # dynamically set version as __version__ in this python file
 
 [project]
-name = "package" #package name is package
+name = "packageworkshop" #package name is package
 dynamic = ["version"] # dynamically set version by previous path
 #version = "0.1.0" # Set version as fixed
 authors = [
@@ -28,6 +28,14 @@ dependencies=[ # Would install these packages when building and installing our p
     "pytest>=7.4.3",
     "nox>=2023.4.22"
 ]
+
+[project.optional-dependencies]
+docs = [
+    "myst_parser >=0.13",
+    "sphinx >=4.0",
+    "sphinx-rtd-theme"
+]
+
 
 [project.urls]
 "Homepage" = "https://github.com/fjying/PythonPackageWorkshop"
