@@ -1,0 +1,17 @@
+cff-version: 1.0.0
+title: PythonPackageWorkshop
+date-released: 2023-12-27
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Junying (Alice)
+    family-names: Fang
+    email: jf3375@princeton.edu
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10436875
+repository-code: 'https://github.com/fjying/PythonPackageWorkshop'
+abstract: Workshop of Packaging and Publishing Local Python Codes
+license: BSD-3-Clause
