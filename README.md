@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/736356201.svg)](https://zenodo.org/doi/10.5281/zenodo.10436874)
+
 # Package
 
 `package` is a simple Python library that contains a single function for rescaling arrays.

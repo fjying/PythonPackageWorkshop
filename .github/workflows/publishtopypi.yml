@@ -1,6 +1,6 @@
 name: Publish Python distribution to TestPyPI
 
-#on: push
+#on: push; This is only use for debug
 on:
   workflow_dispatch:
   release:
