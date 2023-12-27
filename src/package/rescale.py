@@ -8,6 +8,9 @@ def rescale(input_array):
     """
     L = np.min(input_array)
     H = np.max(input_array)
-    output_array = (input_array - L) / (H - L)
+    if np.allclose(L, H):
+        output_array = input_array / L
+    else:
+        output_array = (input_array - L) / (H - L)
     return output_array
 
