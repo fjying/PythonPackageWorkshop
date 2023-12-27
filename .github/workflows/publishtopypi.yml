@@ -32,14 +32,14 @@ jobs:
         path: dist/
 
   publish-to-testpypi:
-    name: Publish Python distribution  to TestPyPI
+    name: Publish Python distribution to TestPyPI
     needs:
     - build
     runs-on: ubuntu-latest
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/packageworkshop1
+      url: https://test.pypi.org/p/packageworkshop
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing

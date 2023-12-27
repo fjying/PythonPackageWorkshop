@@ -9,7 +9,7 @@ sources = ["src"] # Where to build packages
 path = "src/packageworkshop/__init__.py" # dynamically set version as __version__ in this python file
 
 [project]
-name = "packageworkshop" #package name is package
+name = "packageworkshop1" #package name is package
 dynamic = ["version"] # dynamically set version by previous path
 #version = "0.1.0" # Set version as fixed
 authors = [

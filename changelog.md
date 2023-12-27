@@ -1,4 +1,6 @@
-## Unreleased
+## [1.0.0] - 2023-12-27
+### Added
+- Created Github Actions to Automatically Publish new release to TestPyPI
 
 ## [0.1.1] - 2023-12-27
 ### Changed
