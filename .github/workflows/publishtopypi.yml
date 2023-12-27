@@ -1,11 +1,11 @@
 name: Publish Python distribution to TestPyPI
 
-on: push
-#on:
-#  workflow_dispatch:
-#  release:
-#    types:
-#    - published # whenever we make a new GitHub Release, the package would be published to pypi
+#on: push
+on:
+  workflow_dispatch:
+  release:
+    types:
+    - published # whenever we make a new GitHub Release, the package would be published to pypi
 
 jobs:
   build:
