@@ -1,4 +1,4 @@
-## Unreleased
+## [0.1.1] - 2023-12-26
 ### Changed
 - rescale function now scales constant arrays to 1
 
