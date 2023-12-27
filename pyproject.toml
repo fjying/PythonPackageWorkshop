@@ -3,8 +3,32 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-sources = ["src"]
+sources = ["src"] # Where to build packages
+
+[tool.hatch.version]
+path = "src/package/__init__.py" # dynamically set version as __version__ in this python file
 
 [project]
 name = "package" #package name is package
-version = "0.1.1"
+dynamic = ["version"] # dynamically set version by previous path
+#version = "0.1.0" # Set version as fixed
+authors = [
+  { name="Junying (Alice) Fang", email="jf3375@princeton.edu" },
+]
+description = "A package to show how to package and publish python codes"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]  # Show basic information of packages
+dependencies=[ # Would install these packages when building and installing our package
+    "numpy>=1.26.2",
+    "pytest>=7.4.3",
+    "nox>=2023.4.22"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fjying/PythonPackageWorkshop"
+
