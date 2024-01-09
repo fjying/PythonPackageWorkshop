@@ -1,15 +1,18 @@
 [![DOI](https://zenodo.org/badge/736356201.svg)](https://zenodo.org/doi/10.5281/zenodo.10436874)
 
-# Package
+## How to Package and Publish Your Python Codes #
+This workshop gives the overview of how to prepare all the documentation and codes to package and publish your python codes.
 
-`package` is a simple Python library that contains a single function for rescaling arrays.
 
-## Installation
+## Install Packages to Run Workshop Codes #
+Change directory to the folder of the repo named `PythonPackageWorkshop`
+```
+cd <.../PythonPackageWorkshop>
+```
 
-Download the source code and use the package manager [pip](https://pip.pypa.io/en/stable/) to install `package`:
-
-```bash
-pip install .
+Install Package named `package`
+```
+pip install -e .
 ```
 
 ## Usage
@@ -21,11 +24,6 @@ from package.rescale import rescale
 # rescales over 0 to 1
 rescale(np.linspace(0, 100, 5))
 ```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [![License](https://img.shields.io/badge/license-BSD-green.svg)](https://opensource.org/licenses/BSD-3-Clause)
