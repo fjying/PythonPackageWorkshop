@@ -4,7 +4,7 @@
 This workshop gives the overview of how to prepare all the documentation and codes to package and publish your python codes.
 
 
-## Install Packages to Run Workshop Codes #
+## Change Directory to the Repo Folder #
 Change directory to the folder of the repo named `PythonPackageWorkshop`
 ```
 cd <.../PythonPackageWorkshop>
@@ -16,7 +16,7 @@ conda create -n pythonpackageworkshop python=3.9
 conda activate pythonpackageworkshop
 ```
 
-Install Package named `package` and its dependencies
+## Install Package named `package` and its dependencies
 ```
 pip install -e .
 ```
