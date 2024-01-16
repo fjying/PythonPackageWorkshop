@@ -1,4 +1,4 @@
-## [1.0.1] - 2023-01-05
+## [1.0.1] - 2024-01-05
 ### Changed
 - Drop strict package dependencies
 - Change readme to include instructions of setting up package environment directly in Python
