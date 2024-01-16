@@ -3,20 +3,30 @@
 ## How to Package and Publish Your Python Codes #
 This workshop gives the overview of how to prepare all the documentation and codes to package and publish your python codes.
 
-
-## Change Directory to the Repo Folder #
-Change directory to the folder of the repo named `PythonPackageWorkshop`
-```
-cd <.../PythonPackageWorkshop>
-```
-
-## Create and Activate New Conda Environment to Manage Packages 
+## Create and Activate New Package Environment to Manage Packages 
+### Choose either Conda Environment or Python Environment
+### Conda Envirionment
 ```
 conda create -n pythonpackageworkshop python=3.9
 conda activate pythonpackageworkshop
 ```
 
-## Install Package named `package` and its dependencies
+### Python Environment
+```
+mkdir ~/packageenvs
+cd ~/packageenvs
+python -m venv <env_name> 
+cd <env_name>
+source <env_name>/bin/activate
+```
+
+## Change Directory to the Repo Folder #
+Change directory to the folder of the repo `PythonPackageWorkshop`
+```
+cd <.../PythonPackageWorkshop>
+```
+
+## Install Package named `packageworkshop` and its dependencies
 ```
 pip install -e .
 ```
