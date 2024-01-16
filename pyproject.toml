@@ -6,10 +6,10 @@ build-backend = "hatchling.build"
 sources = ["src"] # Where to build packages
 
 [tool.hatch.version]
-path = "src/packageworkshop/__init__.py" # dynamically set version as __version__ in this python file
+path = "src/packageworkshop/__init__.py" # dynamically set version as global variable in this python file
 
 [project]
-name = "packageworkshop" #package name is package
+name = "packageworkshop" #package name is packageworkshop, package name needs to be unique to be published
 dynamic = ["version"] # dynamically set version by previous path
 #version = "0.1.0" # Set version as fixed
 authors = [
