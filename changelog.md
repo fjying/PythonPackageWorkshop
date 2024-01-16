@@ -15,7 +15,7 @@
 ## [0.1.0] - 2023-12-26
 ### Added
 - Created rescale() function and released package
-
+[1.0.1]: https://github.com/fjying/PythonPackageWorkshop/releases/tag/v1.0.1
 [1.0.0]: https://github.com/fjying/PythonPackageWorkshop/releases/tag/v1.0.0
 [0.1.1]: https://github.com/fjying/PythonPackageWorkshop/releases/tag/v0.1.1
 [0.1.0]: https://github.com/fjying/PythonPackageWorkshop/releases/tag/v0.1.0
