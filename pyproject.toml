@@ -3,40 +3,40 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-sources = ["src"] # Where to build packages
+sources = ["src"] # From which folder we start to build packages
 
 [tool.hatch.version]
-path = "src/packageworkshop/__init__.py" # dynamically set version as global variable in this python file
+path = "src/packageworkshop/__init__.py" # dynamically set version as the variable value in this python file
 
 [project]
 name = "packageworkshop" #package name is packageworkshop, package name needs to be unique to be published
-dynamic = ["version"] # dynamically set version by previous path
-#version = "0.1.0" # Set version as fixed
+dynamic = ["version"] # specify version as a dynamic variable: dynamically set version by previous path
+#version = "1.1.0" # Set version as fixed
 authors = [
   { name="Junying (Alice) Fang", email="jf3375@princeton.edu" },
 ]
 description = "A package to show how to package and publish python codes"
 readme = "README.md"
-requires-python = ">=3.7"
-classifiers = [
+requires-python = ">=3.7" # The error would occurs when users install this package on python versions below 3.7
+classifiers = [ # Show basic information of packages
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
-]  # Show basic information of packages
-dependencies=[ # Would install these packages when building and installing our package
-    "numpy", #for specific package version: numpy>=1.2.62
+]
+dependencies=[ # Would automatically install these three packages when we build and install our package using pip install -e .
+    "numpy", #for specific package version: numpy==1.2.62, numpy>=1.2.62
     "pytest",
     "nox"
 ]
 
 [project.optional-dependencies]
-docs = [
+docs = [ # These packages would not be automatically installed. The users may need to install them if they want more functionalities
     "myst_parser",
     "sphinx",
     "sphinx-rtd-theme"
 ]
 
 
-[project.urls]
+[project.urls] # Helpful Links Related to Package
 "Homepage" = "https://github.com/fjying/PythonPackageWorkshop"
 

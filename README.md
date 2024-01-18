@@ -15,9 +15,9 @@ conda activate pythonpackageworkshop
 ```
 mkdir ~/packageenvs
 cd ~/packageenvs
-python -m venv <env_name> 
-cd <env_name>
-source <env_name>/bin/activate
+python -m venv pythonpackageworkshop
+cd pythonpackageworkshop
+source pythonpackageworkshop/bin/activate
 ```
 
 ## Change Directory to the Repo Folder #
