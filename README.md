@@ -16,7 +16,6 @@ conda activate pythonpackageworkshop
 mkdir ~/packageenvs
 cd ~/packageenvs
 python -m venv pythonpackageworkshop
-cd pythonpackageworkshop
 source pythonpackageworkshop/bin/activate
 ```
 

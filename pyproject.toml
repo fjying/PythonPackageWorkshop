@@ -24,7 +24,7 @@ classifiers = [ # Show basic information of packages
     "Operating System :: OS Independent",
 ]
 dependencies=[ # Would automatically install these three packages when we build and install our package using pip install -e .
-    "numpy", #for specific package version: numpy==1.2.62, numpy>=1.2.62
+    "numpy>=1.2.62", #for specific package version: numpy==1.2.62, numpy>=1
     "pytest",
     "nox"
 ]
