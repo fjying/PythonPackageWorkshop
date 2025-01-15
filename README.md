@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/736356201.svg)](https://zenodo.org/doi/10.5281/zenodo.10436874)
 
-## How to Package and Publish Your Python Codes #
+## How to Package and Publish Your Python Codes 
 This workshop gives the overview of how to prepare all the documentation and codes to package and publish your python codes.
 
 ## Create and Activate New Package Environment to Manage Packages 
@@ -10,8 +10,8 @@ This workshop gives the overview of how to prepare all the documentation and cod
 conda create -n pythonpackageworkshop python=3.9
 conda activate pythonpackageworkshop
 ```
-
-### Python Environment
+**
+**### Python Environment
 ```
 mkdir ~/packageenvs
 cd ~/packageenvs
